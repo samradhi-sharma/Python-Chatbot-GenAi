@@ -1,60 +1,48 @@
-# Simple Python Chatbot
+# Python Simple Chatbot
 
-A simple chatbot application written in Python, featuring both a command-line interface and a web interface.
+A simple chatbot implementation using Python and Flask.
 
 ## Features
 
-- Pattern-based response system
-- Command-line interface
+- Pattern-based responses using regular expressions
 - Web interface using Flask
-- No external APIs or AI models required
+- Easy to extend with new patterns and responses
+- Simple and lightweight design
 
-## Installation
+## Getting Started
 
-1. Clone or download this repository
-2. Navigate to the project directory
-3. Install the required dependencies:
-
-```bash
+1. Install dependencies:
+```
 pip install -r requirements.txt
 ```
 
-## Usage
-
-### Command Line Interface
-
-To run the chatbot in the command line:
-
-```bash
-python chatbot.py
+2. Run the Flask web server:
 ```
-
-### Web Interface
-
-To run the chatbot with a web interface:
-
-```bash
 python app.py
 ```
 
-Then open your browser and navigate to `http://localhost:5000` to interact with the chatbot.
+3. Open your browser and navigate to:
+```
+http://localhost:8080
+```
 
-## How It Works
+## Project Structure
 
-This chatbot uses regular expressions to match patterns in user input and responds with predefined messages. It's a very simple approach but demonstrates the basic structure of a chatbot application.
+- `app.py` - Flask web application
+- `chatbot.py` - Core chatbot implementation
+- `templates/` - HTML templates
+- `static/` - CSS and JavaScript files
 
-The chatbot currently understands prompts like:
-- Greetings (hello, hi, hey)
-- Questions about itself (what is your name, who made you)
-- Basic conversation (how are you, thank you)
-- Requests (tell me a joke)
-- Farewells (bye, goodbye)
+## Adding New Responses
 
-## Customization
+To add new responses, edit the `self.responses` dictionary in `chatbot.py`:
 
-You can easily extend the chatbot by adding more patterns and responses to the `responses` dictionary in the `SimpleChatbot` class in `chatbot.py`.
-
-## Requirements
-
-- Python 3.6 or higher
-- Flask (for the web interface) 
+```python
+self.responses = {
+    r'pattern|alternative': [
+        "Response 1",
+        "Response 2"
+    ],
+    # Add more patterns and responses here
+}
+``` 
