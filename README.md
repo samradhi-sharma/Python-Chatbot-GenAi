@@ -1,4 +1,6 @@
 # Python Simple Chatbot
+![image](https://github.com/user-attachments/assets/4043db2a-ddea-47bb-b3a7-3878fdbcce23)
+
 
 A simple chatbot implementation using Python and Flask.
 
@@ -47,6 +49,5 @@ self.responses = {
 }
 
 
-![image](https://github.com/user-attachments/assets/d8ca416e-99c1-4aae-babd-d4ae407ccb85)
 
 ``` 
