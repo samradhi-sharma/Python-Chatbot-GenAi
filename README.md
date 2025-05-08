@@ -45,4 +45,8 @@ self.responses = {
     ],
     # Add more patterns and responses here
 }
+
+
+![image](https://github.com/user-attachments/assets/d8ca416e-99c1-4aae-babd-d4ae407ccb85)
+
 ``` 
