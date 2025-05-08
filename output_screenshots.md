@@ -32,7 +32,8 @@ Chatbot: I was created as a simple Python chatbot.
 
 The web interface provides a more user-friendly experience with the same chatbot functionality:
 
-[Note: Include screenshots of the web interface here when available]
+![image](https://github.com/user-attachments/assets/35052950-ba02-449b-829e-ba0ce8c58550)
+
 
 ### Features Demonstrated in Screenshots:
 
